@@ -143,7 +143,16 @@ git checkout dev
 > Note: If you get `permission denied` error, try to give execution permission to **mvnw**.  
 
     chmod +x mvnw
-  
+
+> Note: If you don't have dos2unix installed, you can install it using the package manager for your system:
+  - On CentOS/RHEL/Fedora:
+  ```
+  sudo yum install dos2unix
+  ```
+  - Once dos2unix is installed, you can convert the line endings of the mvnw script:
+  ```
+  dos2unix mvnw
+  ```
 
 * Take the compiled code and package it in its distributable `JAR` format.
 
